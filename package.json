@@ -1,6 +1,6 @@
 {
   "name": "@aminya/dts-gen",
-  "version": "0.6.1-aminya.1",
+  "version": "0.6.1-aminya.2",
   "description": "TypeScript Definition File Generator",
   "main": "bin/lib/index.js",
   "bin": {
@@ -34,7 +34,8 @@
     "test": "shx cp -r ./tests/fixtures/ ./bin/tests && mocha bin/tests/test.js",
     "build": "tsc",
     "build-browser": "tsc -p browser && webpack",
-    "lint": "tslint --project tsconfig.json --format stylish"
+    "lint": "tslint --project tsconfig.json --format stylish",
+    "prepare": "npm run build"
   },
   "repository": {
     "type": "git",
